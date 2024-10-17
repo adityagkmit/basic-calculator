@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const Operation = require('../src/models/operation.model.js');
 const {
   calculateOperation,

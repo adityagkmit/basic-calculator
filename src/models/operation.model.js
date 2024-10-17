@@ -24,5 +24,5 @@ const operationModel = new mongoose.Schema({
         type:Date,
         default: Date.now
     }
-})
-module.exports = mongoose.model('Operation',operationModel)
+});
+module.exports = mongoose.model('Operation',operationModel);

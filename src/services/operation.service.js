@@ -16,7 +16,7 @@ const calculateOperation = async (payload, email) => {
                 result = operand1 * operand2;
                 break;
             case 'DIV':
-                if (operand2 === 0) throw new Error('Cannot divide by zero');
+                if (operand2 === 0) { throw new Error('Cannot divide by zero');}
                 result = operand1 / operand2;
                 break;
             default:
@@ -51,7 +51,7 @@ const fetchOperationHistory = async (email) => {
 const deleteOperationById = async (id) => {
     try {
         const deletedHistory = await Operation.findByIdAndDelete(id);
-        if (!deletedHistory) throw new Error('History record not found');
+        if (!deletedHistory) { throw new Error('History record not found'); }
         return deletedHistory;
     } catch (error) {
         throw new Error(`Error clearing history: ${error.message}`);
@@ -60,7 +60,7 @@ const deleteOperationById = async (id) => {
 
 const clearOperationHistory = async (email) => {
     try {
-        const result = await Operation.deleteMany({ email: email }); // Return the result here
+        const result = await Operation.deleteMany({ email: email }); 
         return result;
     } catch (error) {
         throw new Error(`Error resetting history: ${error.message}`);
