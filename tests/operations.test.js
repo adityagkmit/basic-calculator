@@ -1,12 +1,12 @@
-const Operation = require('../src/models/operation.model.js');
+const Operation = require('../src/models/operations.model.js');
 const {
   calculateOperation,
   fetchOperationHistory,
   deleteOperationById,
   clearOperationHistory
-} = require('../src/services/operation.service.js');
+} = require('../src/services/operations.service.js');
 
-jest.mock('../src/models/operation.model.js'); // Mock the Operation model
+jest.mock('../src/models/operations.model.js'); // Mock the Operation model
 
 describe('Operation Service Test Cases', () => {
   let operationCreateMock, operationFindMock, operationDeleteMock;

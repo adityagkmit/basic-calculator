@@ -2,7 +2,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const { connectToDB } = require('./config/database.js');
-const calculatorRoutes = require('./routes/operation.route.js');
+const calculatorRoutes = require('./routes/operations.route.js');
 
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');

@@ -4,7 +4,7 @@ const {
   getHistory,
   clearHistory,
   resetHistory,
-} = require("../controllers/operation.controller.js");
+} = require("../controllers/operations.controller.js");
 
 const router = express.Router();
 

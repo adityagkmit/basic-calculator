@@ -3,7 +3,7 @@ const {
   fetchOperationHistory,
   deleteOperationById,
   clearOperationHistory,
-} = require("../services/operation.service.js");
+} = require("../services/operations.service.js");
 
 const performOperation = async (req, res) => {
   const email = req.headers["email"];

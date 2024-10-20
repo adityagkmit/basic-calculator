@@ -1,4 +1,4 @@
-const Operation = require('../models/operation.model.js');
+const Operation = require('../models/operations.model.js');
 
 const calculateOperation = async (payload, email) => {
     let result;
